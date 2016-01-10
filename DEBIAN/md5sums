@@ -1,8 +1,0 @@
-d3b0130802f55bedd9540c8b6660377e  ./usr/bin/iec2utf
-efd9344c3866c505db0ca253f20f9fde  ./usr/bin/utftexindy
-ae6092908b17f18c34fd64d32f4a0270  ./usr/share/iec2utf/iec2utf.lua
-dff2b46689f4f63ab83b7057cec3d4a2  ./usr/share/iec2utf/utftexindy.lua
-91e1a250d56d07fe60de66eaf63ce4fe  ./usr/share/iec2utf/ieclib.lua
-3ea4992460a4ce68e439677ea8c51e07  ./usr/share/doc/iec2utf/changelog.Debian.gz
-02297cb97a2f6afdc25dc64e2f8b6277  ./usr/share/doc/iec2utf/README.md
-06e9feb39d68cd946de5313f71bcd265  ./usr/share/doc/iec2utf/copyright
