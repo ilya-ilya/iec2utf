@@ -1,8 +1,8 @@
 iec2utf
 ===========
 
-This is simple convertor for files writen by LaTeX when `inputenc` package
-with `utf8` option is used. All unicode characters with character code
+This is simple converter for files written by LaTeX when `inputenc` package
+with `utf8` option is used. All Unicode characters with character code
 greater than 127 are encoded as `\IeC{LICR code}`, this tool can translate
 them to `utf8` codes.
 
@@ -32,6 +32,13 @@ iec2utf.lua
     texlua iec2utf.lua "used fontenc" < filename > newfile
 
 You must specify font encodings used in the document, default is `T1 T2A T2B T2C T3 T5 LGR`, which covers European languages with Latin and Cyrrilic alphabets, and Vietnamese.
+
+iec2utf
+-----------
+
+    iec2utf "used fontenc" filename
+
+Bash wrapper of iec2utf.lua, which use default `T1 T2A T2B T2C T3 T5 LGR` encodings and rewrites origin with result.
 
 ### Example
 
@@ -133,7 +140,11 @@ option for language, which is transformed to `-M lang/<langname>/utf8-lang`.
 
 	texlua utftexindy.lua -L czech filename.idx
 
-This is equivalent to 
+and
+
+	utftexindy -L czech filename.idx
+
+These are equivalent to 
 
 	texlua iec2utf.lua < filename.idx | texindy -i -M lang/czech/utf8-lang -o filename.ind
 
