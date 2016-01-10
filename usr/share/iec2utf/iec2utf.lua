@@ -8,7 +8,7 @@ Parameters:
   space separated list of LaTeX font encodings used in the document
 	(default: T1 T2A T2B T2C T3 T5 LGR)
 ]]
-local iec = require "ieclib"
+local iec = require "/usr/share/iec2utf/ieclib.lua"
 local enc = {}
 if arg[1] == nil then
   enc ={"T1","T2A","T2B","T2C","T3","T5", "LGR"} 

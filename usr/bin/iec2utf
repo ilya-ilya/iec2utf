@@ -1,0 +1,3 @@
+#!/bin/bash
+texlua /usr/share/iec2utf/iec2utf.lua < $1 > .$1
+mv .$1 $1

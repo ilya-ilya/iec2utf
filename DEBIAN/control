@@ -1,0 +1,15 @@
+Package: iec2utf
+Version: 0.0-1
+Provides: iec2utf
+Maintainer: Ilya Raiko <mylntsa.ilya.63@gmail.com>
+Architecture: all
+Priority: optional
+Section: tex
+Description: Simple converter from LICR to utf8.
+ This is simple converter for files written by LaTeX
+ when inputenc package with utf8 option is used.
+ All unicode characters with character code greater than 127 are encoded as \IeC{LICR code},
+ this tool can translate them to utf8 codes. .
+ Lua library and two sample scripts are provided.
+Depends: texlive-binaries (>= 2014)
+Origin: https://github.com/michal-h21/iec2utf
